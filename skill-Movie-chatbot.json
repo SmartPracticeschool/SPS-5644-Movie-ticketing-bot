@@ -1,0 +1,2403 @@
+{
+  "intents": [
+    {
+      "intent": "MovieEnquiry",
+      "examples": [
+        {
+          "text": "Movies names"
+        },
+        {
+          "text": "Suggest me some movies."
+        },
+        {
+          "text": "what are the movies for the day?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "otp",
+      "examples": [
+        {
+          "text": "100090"
+        },
+        {
+          "text": "123AB"
+        },
+        {
+          "text": "345Bc"
+        },
+        {
+          "text": "46890"
+        },
+        {
+          "text": "87654"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Seats",
+      "examples": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "6"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ShowTimings",
+      "examples": [
+        {
+          "text": "10.30AM"
+        },
+        {
+          "text": "11PM"
+        },
+        {
+          "text": "1PM"
+        },
+        {
+          "text": "4PM"
+        },
+        {
+          "text": "7.30AM"
+        },
+        {
+          "text": "7.30PM"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ThankYou",
+      "examples": [
+        {
+          "text": "k"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "okay"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "Thank You"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "^(\\\\([a-z] {30}\\\\))?[a-z]{30}@[.]$",
+            "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Hindi",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Baaghi3",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gunjan Saxena",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hindi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Raat Akeli Hai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "War",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Kannada",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Dia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kannada",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Love Moctail",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pogaru",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Robert",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Malayalam",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ABCD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Drishyam",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lucifer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Malayalam",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vikramadithyan",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mobileno",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "mobileno",
+          "patterns": [
+            "^[789]\\d{9}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Paymentmode",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Google Pay",
+          "synonyms": [
+            "GPay"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Net Banking",
+          "synonyms": [
+            "Online Banking"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paytm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Phone Pay",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "regions",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bengalore",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chennai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mysore",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Tamil",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bigil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Petta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Saaho",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tamil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vishwasam",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Telugu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Geeta Govindam",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hit",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mahanati",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Maharshi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Telugu",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "theatre",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "DRC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PVR",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "something went wrong. Try again."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1602659958199",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1602786601503",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1602786601961",
+      "previous_sibling": "handler_9_1602786601961"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_9_1602659354845",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602674534564"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_16_1602667832835",
+      "event_name": "focus",
+      "dialog_node": "handler_17_1602667832844",
+      "previous_sibling": "node_4_1602659256754"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_9_1602659958199",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1602675529527",
+      "previous_sibling": "node_1_1602786897755"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1602784798441",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1602784798514"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter your Mobile number."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1602833915601",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1602833915685",
+      "previous_sibling": "handler_8_1602833915685"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_23_1602668337041",
+      "event_name": "focus",
+      "dialog_node": "handler_24_1602668337055",
+      "previous_sibling": "node_11_1602660910708"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_30_1602668383619",
+      "event_name": "focus",
+      "dialog_node": "handler_31_1602668383630",
+      "previous_sibling": "node_15_1602661028514"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_2_1602506151098",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1602506151103",
+      "previous_sibling": "node_5_1602660780556"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_1_1602660156251",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1602680643561",
+      "previous_sibling": "node_3_1602660462859"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_44_1602669991258",
+      "event_name": "focus",
+      "dialog_node": "handler_45_1602669991272",
+      "previous_sibling": "node_18_1602661197808"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1602834032850",
+      "context": {
+        "emailid": "@email:email"
+      },
+      "conditions": "@email:email",
+      "event_name": "input",
+      "dialog_node": "handler_5_1602834032941"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602830963146",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1602830963167"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter your Email id to proceed."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1602834032850",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602834032941",
+      "previous_sibling": "handler_5_1602834032941"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1602833915601",
+      "context": {
+        "mobileno": "@mobileno:mobileno"
+      },
+      "conditions": "@mobileno:mobileno",
+      "event_name": "input",
+      "dialog_node": "handler_8_1602833915685"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter number of seats to book."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1602784798441",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1602784798514",
+      "previous_sibling": "handler_2_1602784798514"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1602786601503",
+      "event_name": "input",
+      "dialog_node": "handler_9_1602786601961"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1602786897755",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1602786897774",
+      "previous_sibling": "node_1_1602660156251"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://ahseeit.com/tamil/king-include/uploads/2019/06/d9ldtomu0acktpj-6404750519.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_23_1602668337041",
+      "conditions": "@Tamil:Bigil",
+      "dialog_node": "node_10_1602660907814",
+      "previous_sibling": "node_12_1602660913094"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.india-forums.com/bollywood/images/uploads/49D_petta-4.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_23_1602668337041",
+      "conditions": "@Tamil:Petta",
+      "dialog_node": "node_11_1602660910708",
+      "previous_sibling": "node_10_1602660907814"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Total $number Ticket(s) cost is <? $number*200 ?> Rs  Complete the payment to confirm booking."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Choose the mode of Payment.",
+            "options": [
+              {
+                "label": "Google Pay",
+                "value": {
+                  "input": {
+                    "text": "Google Pay"
+                  }
+                }
+              },
+              {
+                "label": "Phone Pay",
+                "value": {
+                  "input": {
+                    "text": "Phone Pay"
+                  }
+                }
+              },
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "Net Banking"
+                  }
+                }
+              },
+              {
+                "label": "Paytm",
+                "value": {
+                  "input": {
+                    "text": "Paytm"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1602786897755",
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1602660462859"
+      },
+      "conditions": "#otp",
+      "dialog_node": "node_1_1602660156251"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for providing your mobile number. OTP has been sent to your mobile number provider, please enter the OTP."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602659958199",
+      "context": {
+        "phn": "@mobileno.literal"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1602660156251"
+      },
+      "conditions": "@sys-number",
+      "dialog_node": "node_1_1602786897755"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://ticketspi.com/upload/event/orig/project_42505.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_23_1602668337041",
+      "conditions": "@Tamil:Vishwasam",
+      "dialog_node": "node_12_1602660913094",
+      "previous_sibling": "node_9_1602660880416"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.seelatest.com/images/hit%20day%201%20(2).jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_30_1602668383619",
+      "conditions": "@Telugu:Hit",
+      "dialog_node": "node_13_1602660984135"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://miro.medium.com/max/700/1*ktWgbLTXTM02Fdiz2bm_Vw.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_30_1602668383619",
+      "conditions": "@Telugu:Maharshi",
+      "dialog_node": "node_14_1602661025528",
+      "previous_sibling": "node_13_1602660984135"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.filmibeat.com/fanimg/movie/16114/mahanati-photos-images-61143.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_30_1602668383619",
+      "conditions": "@Telugu:Mahanati",
+      "dialog_node": "node_15_1602661028514",
+      "previous_sibling": "node_16_1602661031353"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://naasongs.com.co/wp-content/uploads/2018/08/Geetha-Govindam-jpeg-1.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_30_1602668383619",
+      "conditions": "@Telugu:(Geeta Govindam)",
+      "dialog_node": "node_16_1602661031353",
+      "previous_sibling": "node_14_1602661025528"
+    },
+    {
+      "type": "standard",
+      "title": "language-kannada",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Kannada",
+      "dialog_node": "node_16_1602667832835",
+      "previous_sibling": "node_23_1602668337041"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.satiitv.com/wp-content/uploads/2019/10/war.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1602669991258",
+      "conditions": "@Hindi:War",
+      "dialog_node": "node_17_1602661092146"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.sify.com/uploads/Raat_Akeli_Hai_Review_uh5mGWedhbgef.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1602669991258",
+      "conditions": "@Hindi:(Raat Akeli Hai)",
+      "dialog_node": "node_18_1602661197808",
+      "previous_sibling": "node_20_1602661202103"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://planetbollywood.com/wp/wp-content/uploads/2020/03/98C0DD7D-F75D-4D23-BA20-977675993512-800x1039.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1602669991258",
+      "conditions": "@Hindi:Baaghi3",
+      "dialog_node": "node_19_1602661199900",
+      "previous_sibling": "node_17_1602661092146"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://images.indulgexpress.com/uploads/user/imagelibrary/2019/8/29/original/Gunjan-Saxena.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1602669991258",
+      "conditions": "@Hindi:(Gunjan Saxena)",
+      "dialog_node": "node_20_1602661202103",
+      "previous_sibling": "node_19_1602661199900"
+    },
+    {
+      "type": "standard",
+      "title": "language-Malayalam",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Malayalam",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1602506151098",
+      "previous_sibling": "node_2_1602830963146"
+    },
+    {
+      "type": "frame",
+      "title": "email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Now Select the language of the movie you would like to watch."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Kannada",
+                "value": {
+                  "input": {
+                    "text": "Kannada"
+                  }
+                }
+              },
+              {
+                "label": "Hindi",
+                "value": {
+                  "input": {
+                    "text": "Hindi"
+                  }
+                }
+              },
+              {
+                "label": "Malayalam",
+                "value": {
+                  "input": {
+                    "text": "Malayalam"
+                  }
+                }
+              },
+              {
+                "label": "Telugu",
+                "value": {
+                  "input": {
+                    "text": "Telugu"
+                  }
+                }
+              },
+              {
+                "label": "Tamil",
+                "value": {
+                  "input": {
+                    "text": "Tamil"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "eid": "@email.literal"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1602830963146",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "language-Tamil",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Tamil",
+      "dialog_node": "node_23_1602668337041",
+      "previous_sibling": "node_44_1602669991258"
+    },
+    {
+      "type": "standard",
+      "title": "language-Telugu",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Telugu",
+      "dialog_node": "node_30_1602668383619",
+      "previous_sibling": "node_2_1602506151098"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://m.media-amazon.com/images/M/MV5BNDEwODVjYWQtYTVhNC00YzU0LWFjYTQtZmVlNDk0YmQ1YTY4XkEyXkFqcGdeQXVyNjIwNzA2NzY@._V1_QL50_.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_16_1602667832835",
+      "conditions": "@Kannada:(Love Moctail)",
+      "dialog_node": "node_3_1602659222018",
+      "previous_sibling": "node_6_1602655434099"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$number Ticket(s) are confirmed. Ticket details are sent to your mobile number $phn and email id  $eid. Thank you for using our service."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1602660156251",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_9_1602660572568"
+      },
+      "conditions": "@Paymentmode",
+      "dialog_node": "node_3_1602660462859"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://kannada.filmibeat.com/fanimg/movie/963/pogaru-photos-images-722.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_16_1602667832835",
+      "conditions": "@Kannada:Pogaru",
+      "dialog_node": "node_4_1602659256754",
+      "previous_sibling": "node_3_1602659222018"
+    },
+    {
+      "type": "standard",
+      "title": "language-Hindi",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Hindi",
+      "dialog_node": "node_44_1602669991258",
+      "previous_sibling": "node_30_1602668383619"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://static.moviecrow.com/gallery/20150603/62801-abcd_american_born_confused_desi_xlg.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602506151098",
+      "conditions": "@Malayalam:ABCD",
+      "dialog_node": "node_5_1602660780556",
+      "previous_sibling": "node_6_1602660811904"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://images.cinemaexpress.com/uploads/user/imagelibrary/2019/6/29/original/DIA.jpeg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the Region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_16_1602667832835",
+      "conditions": "@Kannada:Dia",
+      "dialog_node": "node_6_1602504572042"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.filmibeat.com/fanimg/movie/17724/roberrt-photos-images-67364.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_16_1602667832835",
+      "conditions": "@Kannada:Robert",
+      "dialog_node": "node_6_1602655434099",
+      "previous_sibling": "node_6_1602504572042"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://malayalam.filmibeat.com/img/2015/02/11-1423625054-vikramadithyan.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602506151098",
+      "conditions": "@Malayalam:Vikramadithyan",
+      "dialog_node": "node_6_1602660811904",
+      "previous_sibling": "node_7_1602660815635"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the show time",
+            "options": [
+              {
+                "label": "7.30AM",
+                "value": {
+                  "input": {
+                    "text": "7.30AM"
+                  }
+                }
+              },
+              {
+                "label": "10.30AM",
+                "value": {
+                  "input": {
+                    "text": "10.30AM"
+                  }
+                }
+              },
+              {
+                "label": "1PM",
+                "value": {
+                  "input": {
+                    "text": "1PM"
+                  }
+                }
+              },
+              {
+                "label": "4PM",
+                "value": {
+                  "input": {
+                    "text": "4PM"
+                  }
+                }
+              },
+              {
+                "label": "7.30PM",
+                "value": {
+                  "input": {
+                    "text": "7.30PM"
+                  }
+                }
+              },
+              {
+                "label": "11PM",
+                "value": {
+                  "input": {
+                    "text": "11PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@sys-date",
+      "dialog_node": "node_7_1602659820639",
+      "previous_sibling": "node_7_1602679580938"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://images-na.ssl-images-amazon.com/images/I/51nJR9TBs2L._SY445_.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602506151098",
+      "conditions": "@Malayalam:Lucifer",
+      "dialog_node": "node_7_1602660815635",
+      "previous_sibling": "node_8_1602660818896"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter date in yyyy-mm-dd format to confirm booking."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@theatre",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1602679580938",
+      "previous_sibling": "node_9_1602659354845"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.filmibeat.com/img/2014/02/03-mohanlal-movie-drishyam-releasing-today-133-theaters.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602506151098",
+      "conditions": "@Malayalam:Drishyam",
+      "dialog_node": "node_8_1602660818896"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Choose the theatre",
+            "options": [
+              {
+                "label": "PVR",
+                "value": {
+                  "input": {
+                    "text": "PVR"
+                  }
+                }
+              },
+              {
+                "label": "DRC",
+                "value": {
+                  "input": {
+                    "text": "DRC"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@regions",
+      "dialog_node": "node_9_1602659354845",
+      "previous_sibling": "node_16_1602667832835"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1602786897755"
+      },
+      "conditions": "#ShowTimings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1602659958199",
+      "previous_sibling": "node_7_1602659820639"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome."
+              },
+              {
+                "text": "Thank You. Visit again."
+              },
+              {
+                "text": "Thank You"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602660462859",
+      "conditions": "#ThankYou",
+      "dialog_node": "node_9_1602660572568"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://images.news18.com/tamil/uploads/2019/08/203470-prabhas.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region",
+            "options": [
+              {
+                "label": "Mysore",
+                "value": {
+                  "input": {
+                    "text": "Mysore"
+                  }
+                }
+              },
+              {
+                "label": "Bengalore",
+                "value": {
+                  "input": {
+                    "text": "Bengalore"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_23_1602668337041",
+      "conditions": "@Tamil:Saaho",
+      "dialog_node": "node_9_1602660880416"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the Movie",
+            "options": [
+              {
+                "label": "Dia",
+                "value": {
+                  "input": {
+                    "text": "Dia"
+                  }
+                }
+              },
+              {
+                "label": "Love Mocktail",
+                "value": {
+                  "input": {
+                    "text": "Love Mocktail"
+                  }
+                }
+              },
+              {
+                "label": "Pogaru",
+                "value": {
+                  "input": {
+                    "text": "Pogaru"
+                  }
+                }
+              },
+              {
+                "label": "Robert",
+                "value": {
+                  "input": {
+                    "text": "Robert"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_16_1602667832835",
+      "conditions": "@Kannada:Kannada",
+      "dialog_node": "response_18_1602667832844",
+      "previous_sibling": "handler_17_1602667832844"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the Movie",
+            "options": [
+              {
+                "label": "Bigil",
+                "value": {
+                  "input": {
+                    "text": "Bigil"
+                  }
+                }
+              },
+              {
+                "label": "Petta",
+                "value": {
+                  "input": {
+                    "text": "Petta"
+                  }
+                }
+              },
+              {
+                "label": "Saaho",
+                "value": {
+                  "input": {
+                    "text": "Saaho"
+                  }
+                }
+              },
+              {
+                "label": "Vishwasam",
+                "value": {
+                  "input": {
+                    "text": "Vishwasam"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_23_1602668337041",
+      "conditions": "@Tamil:Tamil",
+      "dialog_node": "response_27_1602668337055",
+      "previous_sibling": "handler_24_1602668337055"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the Movie",
+            "options": [
+              {
+                "label": "Geeta Govindam",
+                "value": {
+                  "input": {
+                    "text": "Geeta Govindam"
+                  }
+                }
+              },
+              {
+                "label": "Hit",
+                "value": {
+                  "input": {
+                    "text": "Hit"
+                  }
+                }
+              },
+              {
+                "label": "Mahanati",
+                "value": {
+                  "input": {
+                    "text": "Mahanati"
+                  }
+                }
+              },
+              {
+                "label": "Maharshi",
+                "value": {
+                  "input": {
+                    "text": "Maharshi"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_30_1602668383619",
+      "conditions": "@Telugu:Telugu",
+      "dialog_node": "response_35_1602668383630",
+      "previous_sibling": "handler_31_1602668383630"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the Movie",
+            "options": [
+              {
+                "label": "Baaghi3",
+                "value": {
+                  "input": {
+                    "text": "Baaghi3"
+                  }
+                }
+              },
+              {
+                "label": "Gunjan Saxena",
+                "value": {
+                  "input": {
+                    "text": "Gunjan Saxena"
+                  }
+                }
+              },
+              {
+                "label": "Raat Akeli Hai",
+                "value": {
+                  "input": {
+                    "text": "Raat Akeli Hai"
+                  }
+                }
+              },
+              {
+                "label": "War",
+                "value": {
+                  "input": {
+                    "text": "War"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1602669991258",
+      "conditions": "@Hindi:Hindi",
+      "dialog_node": "response_50_1602669991272",
+      "previous_sibling": "handler_45_1602669991272"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the Movie",
+            "options": [
+              {
+                "label": "ABCD",
+                "value": {
+                  "input": {
+                    "text": "ABCD"
+                  }
+                }
+              },
+              {
+                "label": "Drishyam",
+                "value": {
+                  "input": {
+                    "text": "Drishyam"
+                  }
+                }
+              },
+              {
+                "label": "Lucifer",
+                "value": {
+                  "input": {
+                    "text": "Lucifer"
+                  }
+                }
+              },
+              {
+                "label": "Vikramadithyan",
+                "value": {
+                  "input": {
+                    "text": "Vikramadithyan"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602506151098",
+      "conditions": "@Malayalam:Malayalam",
+      "dialog_node": "response_7_1602506151103",
+      "previous_sibling": "handler_3_1602506151103"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1602659820639",
+      "dialog_node": "slot_1_1602786601503"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1602786897755",
+      "variable": "$mobileno",
+      "dialog_node": "slot_1_1602833915601",
+      "previous_sibling": "handler_9_1602786897774"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1602659958199",
+      "variable": "$number",
+      "dialog_node": "slot_5_1602784798441",
+      "previous_sibling": "handler_2_1602675529527"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1602830963146",
+      "variable": "$emailid",
+      "dialog_node": "slot_7_1602834032850",
+      "previous_sibling": "handler_6_1602830963167"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey , I'm here to help you to book a movie ticket. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1602830963146"
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Movie chatbot",
+  "language": "en",
+  "description": "I'm a Movie bot capable of helping you in booking movie ticket by showing movies list, Show Timings and cost details."
+}
